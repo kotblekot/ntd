@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+sensors | awk '/Core 0/ {printf "%i°C\n",$3}'

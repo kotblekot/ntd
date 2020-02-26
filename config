@@ -1,0 +1,67 @@
+command=~/.bin/$BLOCK_NAME
+align=center
+separator=false
+separator_block_width=10
+markup=pango
+
+[mediaplayer]
+instance=spotify
+interval=5
+signal=10
+color=#a4304f
+
+[volume]
+interval=5
+signal=10
+color=#a4304f
+
+[root]
+command=printf "" && ~/.bin/disk
+instance=/
+interval=3600
+color=#445a90
+
+[home]
+command=printf "" && ~/.bin/disk
+instance=/home/
+interval=3600
+color=#445a90
+
+
+[memory]
+command=printf " " && ~/.bin/memory
+interval=30
+color=#
+
+
+[cpu_usage]
+command=printf " " && ~/.bin/cpu_usage
+interval=5
+color=#aec3c0
+
+[temperature]
+command=printf " " && ~/.bin/temperature
+interval=10
+color=#aec3c0
+
+
+[battery]
+command=printf " " && ~/.bin/battery
+interval=60
+color=#b8609c
+
+[wifi]
+command=printf " " && ~/.bin/wifi
+instance=wlp3s0
+interval=60
+color=#445a90
+
+[date]
+command=printf " " && date '+%a%e/%m/%Y'
+interval=600
+color=#c24658
+
+[time]
+command=printf " " && date '+%I:%M'
+interval=50
+color=#c24658
